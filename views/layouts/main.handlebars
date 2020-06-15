@@ -5,26 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Technically Speaking</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
   <div class="wrapper">
     <header>
-        <h1>
-            <a href="/">Technically Speaking</a>
+        <h1 class="has-background-info has-text-primary-light px-3 py-3">Technically Speaking: A  Tech Blog
         </h1>
-        <nav>
+        <nav class="navbar mt-2">
             {{#if loggedIn}}
-            <a href="/dashboard">dashboard</a>
-            <button id="logout" class="btn-no-style">logout</button>
+            <a href="/" class="navbar-item is-hoverable pt-1">homepage</a>
+            <a href="/dashboard" class="navbar-item is-hoverable pt-1">dashboard</a>
+            <button id="logout" class="button is-danger">logout</button>
             {{else}}
-            <a href="/login">login</a>
+            <a href="/" class="navbar-item is-hoverable pt-1">homepage</a>
+            <a href="/login" class="button is-primary">login</a>
             {{/if}}
         </nav>
     </header>
 
     <main>
-      {{{ body }}}
+            {{{ body }}}
     </main>
     <footer>
       Thanks for visiting!

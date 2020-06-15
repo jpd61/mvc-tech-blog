@@ -8,9 +8,9 @@ router.get('/', (req, res) => {
     Post.findAll({
       attributes: [
         'id',
-        'post_url',
         'title',
-        'created_at'
+        'created_at',
+        'post_content'
       ],
       include: [
         {
@@ -18,12 +18,12 @@ router.get('/', (req, res) => {
           attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
-            attributes: ['username']
+            attributes: ['username', 'twitter_name', 'github_name']
           }
         },
         {
           model: User,
-          attributes: ['username']
+          attributes: ['username', 'twitter_name', 'github_name']
         }
       ]
     })
@@ -56,9 +56,9 @@ router.get('/login', (req, res) => {
       },
       attributes: [
         'id',
-        'post_url',
         'title',
-        'created_at'
+        'created_at',
+        'post_content'
       ],
       include: [
         {
@@ -66,12 +66,12 @@ router.get('/login', (req, res) => {
           attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
-            attributes: ['username']
+            attributes: ['username', 'twitter_name', 'github_name']
           }
         },
         {
           model: User,
-          attributes: ['username']
+          attributes: ['username', 'twitter_name', 'github_name']
         }
       ]
     })

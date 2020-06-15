@@ -1,11 +1,23 @@
-<article class="post">
-  <div class="title">
-    <a href="{{post_url}}" target="_blank">{{title}}</a>
-    <span>({{format_url post_url}})</span>
-  </div>
-  <div class="meta">
-  by {{user.username}} on {{format_date created_at}}
-  |
-  <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-</div>
-</article>
+a<div class="card mb-6">
+  <header class="card-header card-header-title has-background-info">
+    
+        <div class="column">
+            <p class=" has-text-primary-light"></p>
+      <a href="/post/{{id}}"  class="has-text-primary-light is-capitalized is-pulled-left">{{title}} </a></p>
+      </div>
+
+      <div class="column">
+      <span class="is-relative is-pulled-right has-text-primary-light is-italic"> </span>
+      </div>
+    
+  </header>
+
+    <div class="card-content">
+        <div class="content has-text-justified">
+            {{post_content}}
+        </div>
+            <div class="is-pulled-right">
+                <b>{{user.username}} <a href="https://twitter.com/{{user.twitter_name}}><i class="fab fa-twitter"></i></a> <i class="fab fa-github"></i></b> | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+            </div>
+        
+    </div>

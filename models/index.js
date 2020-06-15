@@ -11,14 +11,6 @@ Post.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
-Vote.belongsTo(User, {
-    foreignKey: 'user_id'
-});
-  
-Vote.belongsTo(Post, {
-    foreignKey: 'post_id'
-});
-
 Comment.belongsTo(User, {
     foreignKey: 'user_id'
   });

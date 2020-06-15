@@ -25,7 +25,7 @@ router.get('/:id', (req, res) => {
         include: [
             {
               model: Post,
-              attributes: ['id', 'title', 'post_url', 'created_at']
+              attributes: ['id', 'title', 'post_content', 'created_at']
             },
             {
                 model: Comment,
@@ -56,12 +56,16 @@ router.post('/', (req, res) => {
     User.create({
       username: req.body.username,
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      twitter_name: req.body.twitter_name,
+      github_name: req.body.github_name
     })
     .then(dbUserData => {
       req.session.save(() => {
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
+        req.session.twitter_name = dbUserData.twitter_name;
+        req.session.github_name = dbUserData.github_name;
         req.session.loggedIn = true;
     
         res.json(dbUserData);
@@ -92,6 +96,8 @@ router.post('/', (req, res) => {
         // declare session variables
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
+        req.session.twitter_name = dbUserData.twitter_name;
+        req.session.github_name = dbUserData.github_name;
         req.session.loggedIn = true;
   
         res.json({ user: dbUserData, message: 'You are now logged in!' });
