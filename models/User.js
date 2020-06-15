@@ -25,11 +25,11 @@ User.init(
           type: DataTypes.STRING,
           allowNull: false
         },
-        twitter_name: {
+        twitter: {
             type: DataTypes.STRING,
             allowNull: true
         },
-        github_name: {
+        github: {
             type: DataTypes.STRING,
             allowNull: true
         },

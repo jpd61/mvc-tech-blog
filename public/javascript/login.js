@@ -7,7 +7,7 @@ async function signupFormHandler(event) {
     const twitter = document.querySelector('#twitter-signup').value.trim();
     const github = document.querySelector('#github-signup').value.trim();
   
-    if (username && email && password) {
+    if (username && email && password && twitter && github) {
       const response = await fetch('/api/users', {
         method: 'post',
         body: JSON.stringify({

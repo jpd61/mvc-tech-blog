@@ -57,15 +57,15 @@ router.post('/', (req, res) => {
       username: req.body.username,
       email: req.body.email,
       password: req.body.password,
-      twitter_name: req.body.twitter_name,
-      github_name: req.body.github_name
+      twitter: req.body.twitter,
+      github: req.body.github
     })
     .then(dbUserData => {
       req.session.save(() => {
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
-        req.session.twitter_name = dbUserData.twitter_name;
-        req.session.github_name = dbUserData.github_name;
+        req.session.twitter = dbUserData.twitter;
+        req.session.github = dbUserData.github;
         req.session.loggedIn = true;
     
         res.json(dbUserData);
@@ -96,8 +96,8 @@ router.post('/', (req, res) => {
         // declare session variables
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
-        req.session.twitter_name = dbUserData.twitter_name;
-        req.session.github_name = dbUserData.github_name;
+        req.session.twitter = dbUserData.twitter;
+        req.session.github = dbUserData.github;
         req.session.loggedIn = true;
   
         res.json({ user: dbUserData, message: 'You are now logged in!' });

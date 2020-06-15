@@ -12,9 +12,8 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
     font-weight: bold;
-    transition: color .1s;
+    color: black;
   }
   
   a:hover {
@@ -22,6 +21,7 @@
   }
   
   button {
+
     border: 0;
     padding: 1%;
     font-weight: bold;
