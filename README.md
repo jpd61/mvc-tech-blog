@@ -1,6 +1,41 @@
-# mvc-tech-blog
-Model-View-Controller (MVC) Tech Blog
+<h1 align="center">Model-View-Controller (MVC) Tech Blog 👋</h1>
+  
+<p align="center">
+    <img src="https://img.shields.io/github/repo-size/jpd61/e-commerce-backend" />
+    <img src="https://img.shields.io/github/languages/top/jpd61/e-commerce-backend"  />
+    <img src="https://img.shields.io/github/issues/jpd61/e-commerce-backend" />
+    <img src="https://img.shields.io/github/last-commit/jpd61/e-commerce-backend" >
+    <a href="https://github.com/jpd61"><img src="https://img.shields.io/github/followers/jpd61?style=social" target="_blank" /></a>
+    <a href="https://twitter.com/jpdewoody">
+        <img alt="Twitter: jpdewoody" src="https://img.shields.io/twitter/follow/jpdewoody.svg?style=social" target="_blank" />
+    </a>
+</p>
+  
+<p align="center">
+    <img src="https://img.shields.io/badge/Javascript-yellow" />
+    <img src="https://img.shields.io/badge/express-orange" />
+    <img src="https://img.shields.io/badge/Sequelize-blue"  />
+    <img src="https://img.shields.io/badge/mySQL-blue"  />
+    <img src="https://img.shields.io/badge/dotenv-green" />
+</p>
+   
+## Description
 
+🔍 A mysql database and application using Model View Controller and Handlebars. Built using MySQL2, Express, Sequelize and dotenv.
+  
+💻 Below is the gif showing the functionality of the application:
+  
+![DB Setup and Start](./animations/DB%20setup%20and%20start.gif)
+
+## User Story
+
+```
+AS A developer who writes about tech
+I WANT a CMS-style blog site
+SO THAT I can publish articles, blog posts, and my thoughts and opinions
+```
+
+## Acceptance Criteria
 
 ```
 GIVEN a CMS-style blog site
@@ -35,5 +70,55 @@ THEN I am able to delete or update my post and taken back to an updated dashboar
 WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the page for more than a set time
-THEN I am automatically signed out of the site 
+THEN I am automatically signed out of the site
 ```
+   
+## Table of Contents
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [Questions](#questions)
+
+## Installation
+💾   
+  
+`npm init`
+
+`npm install`
+  
+## Usage
+💻   
+  
+Run the following command at the root of your project and answer the prompted questions:
+
+`mysql -u root -p`
+
+Enter PW when promted
+
+`source db/schema.sql`
+
+`quit`
+
+`npm run seed`
+  
+`npm start`
+
+With Nodemon:
+
+`npm run watch`
+
+## Testing
+✏️
+
+Helper testing is currently setup with Jest
+
+## Contributing
+:octocat: [Joseph DeWoody](https://github.com/jpd61)
+
+## Questions
+✉️ Contact me with any questions: [email](mailto:jpd@dewoodyoil.com) , [GitHub](https://github.com/jpd61)<br />
