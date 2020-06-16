@@ -26,9 +26,9 @@
 
 **[Deployed Application](https://hidden-falls-22101.herokuapp.com/)**
   
-💻 Below is the gif showing the functionality of the application:
+💻 Below is a screenshot of the application:
   
-![DB Setup and Start](./animations/DB%20setup%20and%20start.gif)
+![technically speaking: a tech blog](screenshot.PNG)
 
 ## User Story
 
