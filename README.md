@@ -23,6 +23,8 @@
 ## Description
 
 🔍 A mysql database and CMS-style Blog built using Model View Controller (MVC) paradigm. Built using MySQL2, Express, Sequelize, Bulma, Handlebars and dotenv.
+
+**[Deployed Application](https://hidden-falls-22101.herokuapp.com/)**
   
 💻 Below is the gif showing the functionality of the application:
   
