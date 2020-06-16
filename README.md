@@ -1,10 +1,10 @@
 <h1 align="center">Model-View-Controller (MVC) Tech Blog 👋</h1>
   
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/jpd61/e-commerce-backend" />
-    <img src="https://img.shields.io/github/languages/top/jpd61/e-commerce-backend"  />
-    <img src="https://img.shields.io/github/issues/jpd61/e-commerce-backend" />
-    <img src="https://img.shields.io/github/last-commit/jpd61/e-commerce-backend" >
+    <img src="https://img.shields.io/github/repo-size/jpd61/mvc-tech-blog" />
+    <img src="https://img.shields.io/github/languages/top/jpd61/mvc-tech-blog"  />
+    <img src="https://img.shields.io/github/issues/jpd61/mvc-tech-blog" />
+    <img src="https://img.shields.io/github/last-commit/jpd61/mvc-tech-blog" >
     <a href="https://github.com/jpd61"><img src="https://img.shields.io/github/followers/jpd61?style=social" target="_blank" /></a>
     <a href="https://twitter.com/jpdewoody">
         <img alt="Twitter: jpdewoody" src="https://img.shields.io/twitter/follow/jpdewoody.svg?style=social" target="_blank" />
@@ -15,13 +15,14 @@
     <img src="https://img.shields.io/badge/Javascript-yellow" />
     <img src="https://img.shields.io/badge/express-orange" />
     <img src="https://img.shields.io/badge/Sequelize-blue"  />
+    <img src="https://img.shields.io/badge/handlebars-red"  />
     <img src="https://img.shields.io/badge/mySQL-blue"  />
     <img src="https://img.shields.io/badge/dotenv-green" />
 </p>
    
 ## Description
 
-🔍 A mysql database and application using Model View Controller and Handlebars. Built using MySQL2, Express, Sequelize and dotenv.
+🔍 A mysql database and CMS-style Blog built using Model View Controller (MVC) paradigm. Built using MySQL2, Express, Sequelize, Bulma, Handlebars and dotenv.
   
 💻 Below is the gif showing the functionality of the application:
   
