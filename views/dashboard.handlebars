@@ -1,13 +1,13 @@
     <div class="mb-5 pt-3">
-        <a href="/dashboard/create/"><button id="create-post" class="button is-primary is-pulled-right">Create Post</button></a>
+        <a href="/dashboard/create/"><button id="create-post" class="button is-primary is-pulled-right">create post</button></a>
         {{#if posts.length}}
-        <h2 class="title pb-4">Your Posts</h2>
+        <h2 class="title pb-4">dashboard: your posts</h2>
     </div>
 
     {{#each posts as |post|}}
         {{> post-info post}}
         
-            <a href="/dashboard/edit/{{post.id}}"><button class="button mb-5 ml-5 is-warning">Edit Post</button></a>
+            <a href="/dashboard/edit/{{post.id}}"><button class="button mb-5 ml-5 is-warning">edit post</button></a>
         </div>
     {{/each}}
 

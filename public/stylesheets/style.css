@@ -158,3 +158,8 @@
       margin-bottom: 1em;
       margin-top: 1em;
   }
+
+  .rows{
+      display:flex;
+      flex-direction: column;
+  }

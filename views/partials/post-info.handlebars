@@ -1,13 +1,13 @@
 <div class="card mb-6">
-  <header class="card-header card-header-title has-background-info">
+  <header class="card-header card-header-title has-background-grey-lighter">
     
         <div class="column">
             <p class=" has-text-primary-light"></p>
-      <a href="/post/{{id}}"  class="has-text-primary-light is-capitalized is-pulled-left">{{title}} </a></p>
+      <a href="/post/{{id}}"  class="has-text-black is-capitalized is-pulled-left">{{title}} </a></p>
       </div>
 
       <div class="column">
-      <span class="is-relative is-pulled-right has-text-primary-light is-italic"> </span>
+      <span class=""> </span>
       </div>
     
   </header>
@@ -17,7 +17,7 @@
             {{post_content}}
         </div>
             <div class="is-pulled-right">
-                <b>{{user.username}}</b>
+                <b>{{user.username}}</b> | 
                 <a href="https://twitter.com/{{user.twitter}}"><i class="fab fa-twitter"></i></a> 
                 <a href="https://github.com/{{user.github}}"><i class="fab fa-github"></i></a>
                  | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
