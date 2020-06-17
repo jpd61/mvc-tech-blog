@@ -7,7 +7,7 @@ async function signupFormHandler(event) {
     const twitter = document.querySelector('#twitter-signup').value.trim();
     const github = document.querySelector('#github-signup').value.trim();
   
-    if (username && email && password && twitter && github) {
+    if (username && email && password) {
       const response = await fetch('/api/users', {
         method: 'post',
         body: JSON.stringify({
@@ -23,6 +23,7 @@ async function signupFormHandler(event) {
       // check the response status
       if (response.ok) {
         console.log('success');
+        document.location.replace('/dashboard');
       } else {
         alert(response.statusText);
       }
